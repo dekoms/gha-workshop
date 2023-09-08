@@ -1,0 +1,19 @@
+name: Continous Integration
+
+on:
+  pull_request:
+    branches:
+      - dev
+      
+jobs:
+  try-frontend-build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.5.1
+        with:
+          node-version: "16.18.0"
+      - name: try build frontend
+        run: |
+          npm install
+          npm run build
