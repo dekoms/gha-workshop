@@ -202,3 +202,8 @@ main ── develop ── feature/"
 | :bookmark:                  | release  | 버전 릴리즈                                           |
 | :ambulance:                 | hotfix   | 긴급 수정                                             |
 | :twisted_rightwards_arrows: | branch   | 브랜치 추가/병합                                      |
+
+### 수정 테스트
+
+- feature 테스트
+- cd 테스트
